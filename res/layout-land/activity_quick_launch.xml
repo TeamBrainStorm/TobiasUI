@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuickLaunch" >
+
+    <SlidingDrawer
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        
+        android:id="@+id/slidingDrawer">
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FFe5e5e5">
+            
+              <Button
+                android:id="@+id/handle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/handler" />
+            
+            <Button
+                android:id="@+id/youtube"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="78dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Youtube"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_youtube"
+                android:onClick="youtube"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/googleplay"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_alignBaseline="@+id/youtube"
+                android:layout_alignBottom="@+id/youtube"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/card_play"
+                android:onClick="play"
+                android:text="Play Store"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+            
+
+            <Button
+                android:id="@+id/tools"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/chat"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/card_tools"
+                android:onClick="tools"
+                android:text="School Tools"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/email"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_alignLeft="@+id/youtube"
+                android:layout_below="@+id/youtube"
+                android:background="@drawable/card_email"
+                android:onClick="email"
+                android:text="Email"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/chat"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_alignLeft="@+id/googleplay"
+                android:layout_below="@+id/youtube"
+                android:background="@drawable/card_sms"
+                android:onClick="chat"
+                android:text="Chat"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </SlidingDrawer>
+
+</RelativeLayout>

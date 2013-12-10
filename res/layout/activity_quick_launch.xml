@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuickLaunch" >
+
+    <SlidingDrawer
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        
+        android:id="@+id/slidingDrawer">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFe5e5e5">
+            
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/handler" />
+
+            <Button
+                android:id="@+id/youtube"
+                android:layout_width="350dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Youtube"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_youtube"
+                android:onClick="youtube"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/email"
+                android:layout_width="350dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Email"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_email"
+                android:onClick="email"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/googleplay"
+                android:layout_width="350dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Play Store"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_play"
+                android:onClick="play"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/chat"
+                android:layout_width="350dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Chat"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/card_sms"
+                android:onClick="chat"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/tools"
+                android:layout_width="350dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/card_tools"
+                android:onClick="tools"
+                android:text="School Tools"
+                android:textColor="#FF777777"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+</RelativeLayout>
