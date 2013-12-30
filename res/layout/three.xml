@@ -16,10 +16,10 @@
         android:layout_toLeftOf="@+id/button2"
         android:background="@drawable/drive_bg"
         android:text="My Drive"
+        android:onClick="drive"
         android:textAllCaps="true"
         android:textColor="#FFffffff"
-        android:textSize="24sp"
-         android:onClick="drive" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button4"
@@ -30,10 +30,10 @@
         android:layout_alignTop="@+id/button3"
         android:background="@drawable/flash_bg"
         android:text="Flashcards"
+         android:onClick="flashcards"
         android:textAllCaps="true"
         android:textColor="#FFffffff"
-        android:textSize="24sp" 
-         android:onClick="button4"/>
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
@@ -43,11 +43,11 @@
         android:layout_marginTop="16dp"
         android:layout_alignParentRight="true"
         android:background="@drawable/plus_bg"
+         android:onClick="adddoc"
         android:text="+"
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="#FF777777"
-         android:onClick="adddoc"
         />
     <Button
         android:id="@+id/button3"
@@ -58,10 +58,9 @@
         android:layout_marginTop="111dp"
         android:background="@drawable/plus_bg"
         android:text="+"
-        
+         android:onClick="addflashcard"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="#FF777777"
-         android:onClick="addcard" />
+        android:textColor="#FF777777" />
 
 </RelativeLayout>

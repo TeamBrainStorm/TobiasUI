@@ -13,4 +13,7 @@
     <color name="text_border_focused">#000000</color>
     <color name="seek_thumb">#2572AC</color>
     <color name="seek_progress">#FFFFFF</color>
+     <color name="darker">#666</color>
+    <color name="separator">#e0e0e0</color>
+        <color name="Black_transparent">#80000000</color>
 </resources>

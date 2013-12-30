@@ -11,7 +11,12 @@
         android:handle="@+id/handle"
         
         android:id="@+id/slidingDrawer">
-
+   <ImageView
+                android:id="@+id/handle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/handler" />
+   
         <LinearLayout
             android:id="@+id/content"
             android:layout_width="fill_parent"
@@ -19,11 +24,7 @@
             android:orientation="vertical"
             android:background="#FFe5e5e5">
             
-            <Button
-                android:id="@+id/handle"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/handler" />
+         
 
             <Button
                 android:id="@+id/youtube"
