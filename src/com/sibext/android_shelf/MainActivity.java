@@ -111,6 +111,36 @@ public class MainActivity extends FragmentActivity {
         
     }  
     
+    /** Called when the user clicks the drive button */
+    public void drive(View view) {
+    	Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setComponent(new ComponentName("com.google.android.apps.docs","com.google.android.apps.docs.app.NewMainProxyActivity"));
+        intent.putExtra("grace", "Hi");
+        startActivity(intent);
+        
+        
+    }	
+    
+    /** Called when the user clicks the add doc button */
+    public void adddoc(View view) {
+    	Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setComponent(new ComponentName("com.quickoffice.android","com.google.android.apps.docs.quickoffice.HomeActivity"));
+        intent.putExtra("grace", "Hi");
+        startActivity(intent);
+        
+        
+    }	
+    
+    /** Called when the user clicks the flashcards button */
+    public void flashcards(View view) {
+    	Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setComponent(new ComponentName("com.d4a.flashtime","com.d4a.flashtime.flashcards.CardListActivity"));
+        intent.putExtra("grace", "Hi");
+        startActivity(intent);
+        
+        
+    }	
+    
     
 }
 
